@@ -49,5 +49,6 @@ git checkout -b dev   相当于
 2 git branch   查看分支列表
 3 git checkout master 切换回master 只能看到master的文件变化
 4 git merge dev 目前在master分支，将dev分支合并到当前master分支
-
-
+5 git branch -d dev 删除dev分支
+6 git log --graph --pretty=oneline --abbrev-commit   查看分支合并图
+7 git merge --no-ff -m "merge with no-ff" dev 使用--no-ff参数关掉fast forward模式，合并时创建一个新分支，保留之前分支的情况
