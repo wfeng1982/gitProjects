@@ -68,6 +68,12 @@ git checkout -b dev   相当于
   恢复删除工作现场 也可以使用 一个命令 git stash pop
 
   恢复指定的工作现场  git stash apply stash@{0}
+3 从github上克隆 repo，git自动将本地master和远程origin的master关联
+  查看远程   git remote,  git remote -v 查看详细信息
+  分支一般包括 master（主分支）、dev（开发分支）、bug（bug分支）、feature（新功能分支）。通常master，dev 需要实时和远程同步，以便其他人知道。  
+  推送主分支到远程master  git push origin master
+  推送dev分支到远程dev    git push origin dev
+4 在远程创建dev分支  
   
 
 
