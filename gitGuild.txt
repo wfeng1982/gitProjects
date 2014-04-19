@@ -22,4 +22,4 @@ git install
 19 git reflog  记录每次操作命令 及版本号
 20 git log  记录提交历史;git reflog 记录命令历史
 21 git checkout -- fileName 使文件回到最后一次git add 或者git commit 的状态
-22 git reset HEAD fileName 撤销使用git add 放到暂存区中的修改
+22 git reset HEAD fileName 撤销使用git add 放到暂存区中的修改，相当于没有执行git add
