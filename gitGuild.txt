@@ -16,5 +16,6 @@ git install
 13 git log
 14 git log --pretty=oneline
 15 git commit -a  = git add fileName && git commit -m 'desc'
-
-testsdfdfdfdfd
+16 git reset --hard HEAD^ =git reset --hard HEAD~1 回退1个版本
+17 git reset --hard HEAD^^ =git reset --hard HEAD~2
+18 git reset --hard commitId  回退到哪个版本
