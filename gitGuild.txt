@@ -15,5 +15,6 @@ git install
 12 git commit -m 'desc'
 13 git log
 14 git log --pretty=oneline
+15 git commit -a  = git add fileName && git commit -m 'desc'
 
 
