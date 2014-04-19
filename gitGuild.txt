@@ -5,5 +5,14 @@ git install
 2 exec the setpath shell script
 3 git config --global user.name Royce1982
 4 git config --global user.email wfeng1982@163.com
+5 git add fileName
+6 git commit -m 'desc'
+7 git status
+8 modify the file
+9 git status
+10 git diff fileName
+11 git add fileName
+12 git commit -m 'desc'
+
 
 
