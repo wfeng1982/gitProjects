@@ -47,6 +47,7 @@ git checkout -b dev   相当于
  git branch dev  创建分支
  git checkout dev 切换分支
 2 git branch   查看分支列表
-
+3 git checkout master 切换回master 只能看到master的文件变化
+4 git merge dev 目前在master分支，将dev分支合并到当前master分支
 
 
