@@ -1,6 +1,6 @@
 
 git install
-
+一 本地git 
 1 download  dmg file from http://git-scm.com/downloads, install the pkg 
 2 exec the setpath shell script
 3 git config --global user.name Royce1982
@@ -24,3 +24,29 @@ git install
 21 git checkout -- fileName 使文件回到最后一次git add 或者git commit 的状态,撤销工作区中的修改 ****
 22 git reset HEAD fileName 撤销使用git add 放到暂存区中的修改，相当于没有执行git add，撤销暂存区的修改*****
 23 git rm fileName  在git库中删除文件 
+
+
+二、远程git github
+1 ssh-keygen -t rsa -C "wfeng1982@163.com" 创建sshkey 
+  无需密码  一路回车
+2 到github上 account setting-ssh key 将生成的id_rsa.pub添加上
+
+3 在github上create repo ,和本地库 名字一样
+
+4 在本地库里执行 和远程github 绑定
+ git remote add origin git@github.com:wfeng1982/gitProjects.git ,这里使用ssh协议，也可以使用https协议
+  其中 origin是github默认 远程库名字,master是远程origin库的master分支, 
+5 git push -u origin master 将本地master分支数据推送到github 远程origin 的master分支上，-u 不仅推送数据，同时绑定本地master和远程origin的master分支,以后可以直接 git push origin master
+
+6 远程库已经存在，可以拷贝
+ git clone git@github.com:xxxx/repoName.git
+
+三、分支管理
+1 创建dev新分支并切换到该分支
+git checkout -b dev   相当于
+ git branch dev  创建分支
+ git checkout dev 切换分支
+2 git branch   查看分支列表
+
+
+
