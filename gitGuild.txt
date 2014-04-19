@@ -52,3 +52,22 @@ git checkout -b dev   相当于
 5 git branch -d dev 删除dev分支
 6 git log --graph --pretty=oneline --abbrev-commit   查看分支合并图
 7 git merge --no-ff -m "merge with no-ff" dev 使用--no-ff参数关掉fast forward模式，合并时创建一个新分支，保留分支合并的情况
+
+四、开发过程
+1 通过branch来对开发过程添加新特性feature,创建新feature分支,开发完毕后合并到master分支，删除feature分支
+2 feature分支上开发中发现严重bug，可通过新分支修复该bug，并且需要保留当前feature的工作区状态，以备修复bug后恢复当前分支的状态
+  git stash  将当前工作区状态保存起来
+  切换到要修改bug的分支 比如master（有可能不是当前的feature分支）,切换到master分支。 git checkout master
+  在master分支创建修改bug分支  git checkout -b issue-101 ,修复bug，提交
+  git checkout master 再切回到master分支 git checkout master
+  将issue-101合并到master分支 git merge --no-ff -m 'merge issue-101' issue-101
+  修改完bug 再切回到 feature分支  
+  查看之前工作现场 git stash list
+  恢复工作现场  git stash apply 
+  删除工作现场  git stash drop
+  恢复删除工作现场 也可以使用 一个命令 git stash pop
+
+  恢复指定的工作现场  git stash apply stash@{0}
+  
+
+
