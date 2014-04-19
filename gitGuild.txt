@@ -1,0 +1,9 @@
+
+git install
+
+1 download  dmg file from http://git-scm.com/downloads, install the pkg 
+2 exec the setpath shell script
+3 git config --global user.name Royce1982
+4 git config --global user.email wfeng1982@163.com
+
+
