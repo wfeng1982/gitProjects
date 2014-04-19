@@ -23,3 +23,4 @@ git install
 20 git log  记录提交历史;git reflog 记录命令历史
 21 git checkout -- fileName 使文件回到最后一次git add 或者git commit 的状态,撤销工作区中的修改 ****
 22 git reset HEAD fileName 撤销使用git add 放到暂存区中的修改，相当于没有执行git add，撤销暂存区的修改*****
+23 git rm fileName  在git库中删除文件 
